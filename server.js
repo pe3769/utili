@@ -10,7 +10,7 @@ app.use(paginate.middleware(10, 50));
  
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/test/bank_data')
+mongoose.connect('mongodb+srv://vercel-admin-user:caPGuP9qGdgelBup@cluster0.zi4ufft.mongodb.net/?retryWrites=true&w=majority')
  .then(() =>  console.log('connection succesful'))
   .catch((err) => console.error(err));
 
